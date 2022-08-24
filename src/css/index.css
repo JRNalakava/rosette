@@ -1,0 +1,29 @@
+:root {
+    --rosette_red: #F04C4C;
+    --rosette_dark_red: #B7082E;
+    --desktop-hero-height: 800;
+  }
+
+.html, body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+
+.index-container{
+    width: 100%;
+    background-color: #FAF9F5;
+}
+
+.hero-container{
+    min-height: calc(var(--desktop-hero-height)*1px);
+}
+.about-us-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: none;
+}
+.rental-container{
+    height: auto;
+}

@@ -1,0 +1,150 @@
+h1{
+    font-size: 3rem;
+    color: var(--rosette_red);
+    margin-bottom: none;
+}
+
+.hero-frame{
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+    max-width: 500px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.banner_text{
+    font-size: 1.75rem;
+    color: var(--rosette_red);
+
+    margin-bottom: 1.5rem;
+}
+
+.rent_btn {
+/* button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 32px;
+gap: 8px;
+
+font-size: xx-large;
+color: white;
+background: var(--rosette_dark_red);
+border-radius: 8px;
+}
+.about_us_btn {
+    /* button */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: xx-large;
+    align-items: center;
+    padding: 8px 32px;
+    gap: 8px;
+
+    color: #000000;
+
+    /* lightest grey */
+
+    background: #FAFAFF;
+    border-radius: 8px;
+}
+
+.btn-row{
+    /* Button Frame */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+@media only screen and (max-width: 400px) {
+    h1{
+        max-width: 100vw;
+        padding-bottom: 100px;
+    }
+    .btn-row{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-frame{
+        width: 100%;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(254, 8, 64, .4);
+        padding: 2%;
+    }
+    .banner_text{
+        display: none;
+    }
+    h1{   
+        /* Headline 1/semi */
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 72px;
+        /* identical to box height, or 112% */
+    
+        /* Error red */
+    
+        color: #000000;
+        text-align: center;
+        margin: auto;
+        width: 350px;
+    }
+    .rent_btn {
+        color: white;
+        background: #000000;
+        width: auto;
+        height: auto;
+        }
+    .about_us_btn {
+        color: #000000;
+        background: #FAFAFF;
+        width: auto;
+        height: auto;
+    }
+    .btn-row{
+        /* Button Frame */
+        /* Auto layout */
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+}

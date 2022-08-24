@@ -1,0 +1,14 @@
+.banner-bg-top{
+    min-height: calc(var(--desktop-hero-height)*1px);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+@media only screen and (max-width: 900px){
+    .banner-bg-top{
+        justify-content: center;
+    }
+}

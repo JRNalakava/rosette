@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "rental_banners",
+  "info": {
+    "singularName": "rental-banner",
+    "pluralName": "rental-banners",
+    "displayName": "Rental Banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_us_banners",
+  "info": {
+    "singularName": "about-us-banner",
+    "pluralName": "about-us-banners",
+    "displayName": "About Us Banner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text_a": {
+      "type": "richtext"
+    },
+    "img_a1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "text_b": {
+      "type": "richtext"
+    },
+    "img_b1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img_a2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "img_b2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
