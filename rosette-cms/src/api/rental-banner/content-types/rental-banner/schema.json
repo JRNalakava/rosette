@@ -4,15 +4,110 @@
   "info": {
     "singularName": "rental-banner",
     "pluralName": "rental-banners",
-    "displayName": "Rental Banner"
+    "displayName": "Rental Banner",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "text": {
+    "top_text": {
       "type": "richtext"
+    },
+    "access_venue": {
+      "type": "richtext"
+    },
+    "pre_event_tech_advisement": {
+      "type": "richtext"
+    },
+    "manager_on_duty": {
+      "type": "richtext"
+    },
+    "equipment_access": {
+      "type": "richtext"
+    },
+    "rental_rates": {
+      "type": "richtext"
+    },
+    "house_venue_lobby": {
+      "type": "richtext"
+    },
+    "technology": {
+      "type": "richtext"
+    },
+    "miscellaneous": {
+      "type": "richtext"
+    },
+    "access_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "pre_event_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "mod_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "equipment_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "house_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "tech_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "misc_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -6,9 +6,8 @@
     justify-content: flex-end;
 }
 
-
 @media only screen and (max-width: 900px){
     .banner-bg-top{
-        justify-content: center;
+        justify-content: flex-start;
     }
 }

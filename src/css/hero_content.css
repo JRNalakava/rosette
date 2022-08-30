@@ -6,9 +6,10 @@ h1{
 
 .hero-frame{
     /* Auto layout */
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
-    margin-right: 5rem;
+    margin-right: 13rem;
     max-width: 500px;
 }
 .content{
@@ -22,27 +23,24 @@ h1{
     color: var(--rosette_red);
 
     margin-bottom: 1.5rem;
+    display: none;
 }
 
-.rent_btn {
-/* button */
+.rent-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: xx-large;
+    align-items: center;
+    padding: 8px 32px;
+    gap: 8px;
+    width: 20rem;
 
-
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 8px 32px;
-gap: 8px;
-
-font-size: xx-large;
-color: white;
-background: var(--rosette_dark_red);
-border-radius: 8px;
+    color: var(--rosette_dark_red);
+    background: #FAFAFF;
+    border-radius: 8px;
 }
-.about_us_btn {
+.about-us-btn {
     /* button */
 
 
@@ -55,27 +53,27 @@ border-radius: 8px;
     align-items: center;
     padding: 8px 32px;
     gap: 8px;
+    width: 20rem;
 
-    color: #000000;
-
-    /* lightest grey */
-
-    background: #FAFAFF;
+    color: #FAFAFF;
+    background: var(--rosette_dark_red);
     border-radius: 8px;
 }
 
-.btn-row{
-    /* Button Frame */
-
-
-    /* Auto layout */
-
+.banner-logo{
     display: flex;
-    flex-direction: row;
+}
+.btn-row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0px;
-    gap: 16px;
+    width: auto;
+    gap: 2rem;
 
+    margin-top: auto;
+    margin-bottom: 5rem;
 
     /* Inside auto layout */
 
@@ -105,11 +103,8 @@ border-radius: 8px;
         justify-content: center;
         bottom: 0;
         left: 0;
-        background-color: rgba(254, 8, 64, .4);
+        background-color: rgba(254, 8, 64, .7);
         padding: 2%;
-    }
-    .banner_text{
-        display: none;
     }
     h1{   
         /* Headline 1/semi */
@@ -128,23 +123,12 @@ border-radius: 8px;
         margin: auto;
         width: 350px;
     }
-    .rent_btn {
-        color: white;
-        background: #000000;
-        width: auto;
-        height: auto;
-        }
-    .about_us_btn {
-        color: #000000;
-        background: #FAFAFF;
-        width: auto;
-        height: auto;
-    }
     .btn-row{
         /* Button Frame */
         /* Auto layout */
         display: flex;
         justify-content: center;
         padding: 0px;
+        margin-bottom: 0;
     }
 }

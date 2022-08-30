@@ -84,7 +84,7 @@ const AboutUsBanner = ({}) => {
               </div>
               <div className="bottom-right-container text-card">
                 <ReactMarkdown>{data.strapiAboutUsBanner.text_b.data.text_b}</ReactMarkdown>  
-                <button className='rent_btn'
+                <button className='rental_btn'
                 onClick={() => scrollTo('#rental')}>Rent the Rosette
                 </button>
               </div>

@@ -19,10 +19,10 @@ const HeroBG = ({children}) => {
                 }
               }
         }
-        mobile_bgImage: file(relativePath: {eq: "exterior.jpg"})
+        mobile_bgImage: file(relativePath: {eq: "venue_birds.jpg"})
         {
             childImageSharp {
-                fluid(maxWidth: 900, quality: 100) {
+                fluid(maxWidth: 1800, quality: 100) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

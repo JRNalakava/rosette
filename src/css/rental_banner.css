@@ -1,6 +1,6 @@
 .rental-frame{
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 20%;
+    padding-right: 20%;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -16,6 +16,15 @@
     background-color: fffed17e;
 }
 
+.fee-card{
+    display: flex;
+    border-radius: 2px;
+    flex-direction: column;
+    width: 50%;
+    gap: 15px;
+}
+
+
 .item-col{
     display: flex;
     flex-direction: column;
@@ -27,30 +36,43 @@
 .row-item{
     display: flex;
     flex-direction: row;
-
-    align-items: center;
-
-    width: clamp(50px, 350px, 400px);
-
+    justify-content: flex-start;
 
     color: #F04C4C;
 
     background-color: #070703d2;
-    border-radius: 25px;
+    width: 65%;
+    min-width: fit-content;
+    max-width: 80%;
+    padding: 5%;
+    border-radius: 3rem;
 }
-.row-item-v{
+.learn-more{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100px;
-    border-radius: 25px;
-    padding: 15px;
-    color: #F04C4C;
+    width: auto;
+    margin: 1%;
+    padding: 5%;
+    border-radius: 2rem;
+    min-height: 5rem;
+    background-color: beige;
+    border: #F04C4C;
+    border-style: groove;
+}
 
+.row-item-v{
+    display: block;
+    text-align: center;
+    margin: auto;
+    max-width: 10rem;
+    border-radius: 3rem;
+    padding: 1rem;
+    color: #F04C4C;
+    align-items: center;
     background-color: #070703d2;
 }
 a{
-    font-size: medium;
+    font-size: x-large;
+    align-self: center;
     height: fit-content;
     width: fit-content;
     /* identical to box height, or 112% */
@@ -71,17 +93,8 @@ h1{    /* Error red */
 .btn-row{
     padding-top: 5%;
 }
-.fee-card{
-    display: flex;
-    border-radius: 2px;
-    border:1px solid black;
-    flex-direction: column;
-    width: 50%;
-    gap: 15px;
-}
 .equipment-card{
     display: flex;
-    border:1px solid black;
     flex-direction: column;
     align-items: center;
     width: 60%;
@@ -113,4 +126,46 @@ h1{    /* Error red */
 
     background: var(--rosette_dark_red);
     border-radius: 8px;
+}
+
+img {
+    display: block;
+    width: 100px;
+}
+
+.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+@media only screen and (max-width:1200px) {
+    .rental-frame{
+        padding:5%
+    }
+    h1{
+        padding-bottom: 5%;
+    }
+    .content-container{
+        display: block;
+        width: 100%;
+    }
+    .fee-card{
+        display: block;
+        width: 100%;
+    }
+    .row-item{
+        width: auto;
+        padding: 5%;
+        border-radius: 3rem;
+    }
+    .row-item-v{
+        width: auto;
+        border-radius: 3rem;
+        padding: 10%;
+    }
+    .equipment-card{
+        display: block;
+        width: 100%;
+    }
 }
