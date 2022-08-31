@@ -156,13 +156,15 @@ img {
     }
     .row-item{
         width: fit-content;
+        word-wrap: break-word;
         padding: 5%;
         border-radius: 3rem;
     }
     .row-item-v{
         width: fit-content;
+        word-wrap: break-word;
         border-radius: 3rem;
-        padding: 10%;
+        padding: 5%;
     }
     .equipment-card{
         display: block;
