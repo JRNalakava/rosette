@@ -4,8 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import ReactMarkdown from 'react-markdown'
 import "../css/rental_banner.css"
 
-import Modal from "./modal"
-
 const RentalBanner = ({}) => {
     const modalRefAccess = useRef();
     
