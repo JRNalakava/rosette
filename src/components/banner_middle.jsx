@@ -17,7 +17,7 @@ const BannerMiddle = ({path, children}) => {
             {
                 childImageSharp {
                     fluid(quality: 100, maxWidth: 4160) {
-                      ...GatsbyImageSharpFluid_withWebp
+                      ...GatsbyImageSharpFluid
                     }
                   }
             }

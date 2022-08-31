@@ -15,7 +15,7 @@ const HeroBG = ({children}) => {
         {
             childImageSharp {
                 fluid(quality: 100, maxWidth: 4160) {
-                  ...GatsbyImageSharpFluid_withWebp
+                  ...GatsbyImageSharpFluid
                 }
               }
         }
@@ -23,7 +23,7 @@ const HeroBG = ({children}) => {
         {
             childImageSharp {
                 fluid(maxWidth: 1800, quality: 100) {
-                  ...GatsbyImageSharpFluid_withWebp
+                  ...GatsbyImageSharpFluid
                 }
               }
         }
