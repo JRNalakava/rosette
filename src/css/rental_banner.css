@@ -155,12 +155,12 @@ img {
         width: 100%;
     }
     .row-item{
-        width: auto;
+        width: fit-content;
         padding: 5%;
         border-radius: 3rem;
     }
     .row-item-v{
-        width: auto;
+        width: fit-content;
         border-radius: 3rem;
         padding: 10%;
     }

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import ReactMarkdown from 'react-markdown'
 import "../css/rental_banner.css"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const RentalBanner = ({}) => {
     const modalRefAccess = useRef();
@@ -90,19 +91,25 @@ const RentalBanner = ({}) => {
                     <div className="item-col">
                         <div className='row-item'>
                             <img src={data.strapiRentalBanner.access_icon.url}/>
-                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.access_venue.data.access_venue}}>Access to the Venue</a>       
+                            <a onClick={() => {
+                                document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.access_venue.data.access_venue;
+                                scrollTo('#rental-info');
+                                }}>Access to the Venue</a>       
                         </div>
                         <div className='row-item'>
                             <img src={data.strapiRentalBanner.pre_event_icon.url}/>
-                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.pre_event_tech_advisement.data.pre_event_tech_advisement}}>Event Planning/Tech Assistance</a>
+                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.pre_event_tech_advisement.data.pre_event_tech_advisement; 
+                                scrollTo('#rental-info');}}>Event Planning/Tech Assistance</a>
                         </div>
                         <div className='row-item'>
                             <img src={data.strapiRentalBanner.mod_icon.url}/>
-                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.manager_on_duty.data.manager_on_duty}}>Manager on Duty</a>
+                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.manager_on_duty.data.manager_on_duty; 
+                                scrollTo('#rental-info');}}>Manager on Duty</a>
                         </div>
                         <div className='row-item'>
                             <img src={data.strapiRentalBanner.equipment_icon.url}/>
-                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.equipment_access.data.equipment_access}}>Equipment Access</a>
+                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.equipment_access.data.equipment_access;
+                                scrollTo('#rental-info');}}>Equipment Access</a>
                         </div>
                     </div>
                     
@@ -114,14 +121,21 @@ const RentalBanner = ({}) => {
                     <div className='equipment-icons'>
                         <div className='row-item-v'>
                             <img className="center" src={data.strapiRentalBanner.house_icon.url}/>
-                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.house_venue_lobby.data.house_venue_lobby}}>House/Venue/Lobby</a></div>
+                            <a onClick={
+                                () => {
+                                    document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.house_venue_lobby.data.house_venue_lobby;
+                                }}>House/Venue/Lobby</a></div>
                         <div className='row-item-v'>
                             <img className="center" src={data.strapiRentalBanner.tech_icon.url}/>
-                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.technology.data.technology}}>Technology</a>
+                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.technology.data.technology;
+                        
+                        scrollTo('#rental-info');}}>Technology</a>
                         </div>
                         <div className='row-item-v'>
                             <img className="center" src={data.strapiRentalBanner.misc_icon.url}/>
-                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.miscellaneous.data.miscellaneous}}>Miscellaneous</a>
+                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.miscellaneous.data.miscellaneous;
+                        
+                        scrollTo('#rental-info');}}>Miscellaneous</a>
                         </div>
                     </div>
                     <div className="btn-row">

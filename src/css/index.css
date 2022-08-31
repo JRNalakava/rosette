@@ -27,3 +27,10 @@
 .rental-container{
     height: auto;
 }
+
+
+@media only screen and (max-width:1200px) {
+    .html, body{
+        width: 100%
+    }
+}
