@@ -83,10 +83,13 @@ const RentalBanner = ({}) => {
                 </div>
                 <ReactMarkdown>{data.strapiRentalBanner.top_text.data.top_text}</ReactMarkdown>
             </div>
+            <div className="btn-row">
+                        <a className='contact-btn' href="https://www.austinclassicalguitar.org/contact-acg/">Contact Us</a>
+                </div>
             <div className='content-container'>
                 <div className='fee-card'>
                     <div className="header-text">
-                    <h1>What's included?</h1>
+                        <h1>What's included?</h1>
                     </div>
                     <div className="item-col">
                         <div className='row-item'>
@@ -96,13 +99,12 @@ const RentalBanner = ({}) => {
                             <ReactMarkdown>{data.strapiRentalBanner.pre_event_tech_advisement.data.pre_event_tech_advisement}</ReactMarkdown>
                         </div>
                         <div className='row-item'>
-                        <ReactMarkdown>{data.strapiRentalBanner.manager_on_duty.data.manager_on_duty}</ReactMarkdown>
+                            <ReactMarkdown>{data.strapiRentalBanner.manager_on_duty.data.manager_on_duty}</ReactMarkdown>
                         </div>
                         <div className='row-item'>
-                        <ReactMarkdown>{data.strapiRentalBanner.equipment_access.data.equipment_access}</ReactMarkdown>
+                            <ReactMarkdown>{data.strapiRentalBanner.equipment_access.data.equipment_access}</ReactMarkdown>
                         </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
                 <div className='equipment-card'>
                     <div className="header-text">
@@ -118,9 +120,6 @@ const RentalBanner = ({}) => {
                         <div className='row-item'>
                             <ReactMarkdown>{data.strapiRentalBanner.miscellaneous.data.miscellaneous}</ReactMarkdown>
                         </div>
-                    </div>
-                    <div className="btn-row">
-                        <a className='contact-btn' href="https://www.austinclassicalguitar.org/contact-acg/">Contact Us</a>
                     </div>
                 </div>
             </div>

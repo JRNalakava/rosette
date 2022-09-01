@@ -85,22 +85,12 @@ const AboutUsBanner = ({}) => {
                 <ReactMarkdown>{data.strapiAboutUsBanner.text_a.data.text_a}</ReactMarkdown>
                 </div>
               <div className="img-card">
-                <div className="container">
-                  <GatsbyImage className="img_round" image={img_a1} alt={'Picture of the venue'} />
-                </div>
-                <div className="container">
-                  <GatsbyImage className="img_round" image={img_a2} alt={'Picture of the venue'} />
-                </div>
+                  <GatsbyImage image={img_b1} alt={'Picture of the venue'} />
               </div>
             </div>
             <div className="bottom-container">
               <div className="img-card">
-                <div className="container">
-                <GatsbyImage className="img_round" image={img_b1} alt={'Picture of the venue'} />
-                </div>
-                <div className="container">
-                <GatsbyImage className="img_round" image={img_b2} alt={'Picture of the venue'} />
-                </div>
+                <GatsbyImage image={img_b2} alt={'Picture of the venue'} />
               </div>
               <div className="bottom-right-container text-card">
                 <ReactMarkdown>{data.strapiAboutUsBanner.text_b.data.text_b}</ReactMarkdown>  
