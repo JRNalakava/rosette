@@ -39,7 +39,7 @@
     flex-direction: row;
     justify-content: flex-start;
 
-    color: black;
+    color: white;
 
     background-color: var(--rosette_dark_red);
     width: 65%;
