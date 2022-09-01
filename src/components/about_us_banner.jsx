@@ -26,7 +26,10 @@ const AboutUsBanner = ({}) => {
           alternativeText
           localFile {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(
+                quality: 90
+                width: 2000
+              )
             }
           }
         }
@@ -34,7 +37,10 @@ const AboutUsBanner = ({}) => {
           alternativeText
           localFile {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(
+                quality: 90
+                width: 2000
+              )
             }
           }
         }
@@ -42,7 +48,10 @@ const AboutUsBanner = ({}) => {
           alternativeText
           localFile {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(
+                quality: 90
+                width: 2000
+              )
             }
           }
         }
@@ -50,7 +59,10 @@ const AboutUsBanner = ({}) => {
           alternativeText
           localFile {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(
+                quality: 90
+                width: 2000
+              )
             }
           }
         }
@@ -72,15 +84,23 @@ const AboutUsBanner = ({}) => {
               <div className="top-left-container text-card">
                 <ReactMarkdown>{data.strapiAboutUsBanner.text_a.data.text_a}</ReactMarkdown>
                 </div>
-              <div className="top-right-container img-card">
-                <GatsbyImage className="pretty_img" image={img_a1} alt={'Picture of the venue'} />
-                <GatsbyImage className="pretty_img" image={img_a2} alt={'Picture of the venue'} />
+              <div className="img-card">
+                <div className="container">
+                  <GatsbyImage className="img_round" image={img_a1} alt={'Picture of the venue'} />
+                </div>
+                <div className="container">
+                  <GatsbyImage className="img_round" image={img_a2} alt={'Picture of the venue'} />
+                </div>
               </div>
             </div>
             <div className="bottom-container">
-              <div className="bottom-left-container img-card">
-                <GatsbyImage className="pretty_img" image={img_b1} alt={'Picture of the venue'} />
-                <GatsbyImage className="pretty_img" image={img_b2} alt={'Picture of the venue'} />
+              <div className="img-card">
+                <div className="container">
+                <GatsbyImage className="img_round" image={img_b1} alt={'Picture of the venue'} />
+                </div>
+                <div className="container">
+                <GatsbyImage className="img_round" image={img_b2} alt={'Picture of the venue'} />
+                </div>
               </div>
               <div className="bottom-right-container text-card">
                 <ReactMarkdown>{data.strapiAboutUsBanner.text_b.data.text_b}</ReactMarkdown>  

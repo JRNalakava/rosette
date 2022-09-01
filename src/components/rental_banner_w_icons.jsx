@@ -5,11 +5,11 @@ import ReactMarkdown from 'react-markdown'
 import "../css/rental_banner.css"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-const RentalBanner = ({}) => {
+const RentalBanner_Icons = ({}) => {
     const modalRefAccess = useRef();
     
     const data = useStaticQuery(graphql`
-    query rental{
+    query rental_icon{
         strapiRentalBanner {
             top_text {
                 data {
@@ -90,16 +90,26 @@ const RentalBanner = ({}) => {
                     </div>
                     <div className="item-col">
                         <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.access_venue.data.access_venue}</ReactMarkdown>
+                            <img src={data.strapiRentalBanner.access_icon.url}/>
+                            <a onClick={() => {
+                                document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.access_venue.data.access_venue;
+                                scrollTo('#rental-info');
+                                }}>Access to the Venue</a>       
                         </div>
                         <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.pre_event_tech_advisement.data.pre_event_tech_advisement}</ReactMarkdown>
+                            <img src={data.strapiRentalBanner.pre_event_icon.url}/>
+                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.pre_event_tech_advisement.data.pre_event_tech_advisement; 
+                                scrollTo('#rental-info');}}>Event Planning/Tech Assistance</a>
                         </div>
                         <div className='row-item'>
-                        <ReactMarkdown>{data.strapiRentalBanner.manager_on_duty.data.manager_on_duty}</ReactMarkdown>
+                            <img src={data.strapiRentalBanner.mod_icon.url}/>
+                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.manager_on_duty.data.manager_on_duty; 
+                                scrollTo('#rental-info');}}>Manager on Duty</a>
                         </div>
                         <div className='row-item'>
-                        <ReactMarkdown>{data.strapiRentalBanner.equipment_access.data.equipment_access}</ReactMarkdown>
+                            <img src={data.strapiRentalBanner.equipment_icon.url}/>
+                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.equipment_access.data.equipment_access;
+                                scrollTo('#rental-info');}}>Equipment Access</a>
                         </div>
                     </div>
                     
@@ -108,15 +118,24 @@ const RentalBanner = ({}) => {
                     <div className="header-text">
                         <h1>Equipment Available</h1>
                     </div> 
-                    <div className='item-col'>
-                        <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.house_venue_lobby.data.house_venue_lobby}</ReactMarkdown>
+                    <div className='equipment-icons'>
+                        <div className='row-item-v'>
+                            <img className="center" src={data.strapiRentalBanner.house_icon.url}/>
+                            <a onClick={
+                                () => {
+                                    document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.house_venue_lobby.data.house_venue_lobby;
+                                }}>House/Venue/Lobby</a></div>
+                        <div className='row-item-v'>
+                            <img className="center" src={data.strapiRentalBanner.tech_icon.url}/>
+                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.technology.data.technology;
+                        
+                        scrollTo('#rental-info');}}>Technology</a>
                         </div>
-                        <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.technology.data.technology}</ReactMarkdown>
-                        </div>
-                        <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.miscellaneous.data.miscellaneous}</ReactMarkdown>
+                        <div className='row-item-v'>
+                            <img className="center" src={data.strapiRentalBanner.misc_icon.url}/>
+                            <a onClick={() => {document.getElementById("rental-info").innerHTML = data.strapiRentalBanner.miscellaneous.data.miscellaneous;
+                        
+                        scrollTo('#rental-info');}}>Miscellaneous</a>
                         </div>
                     </div>
                     <div className="btn-row">
@@ -124,8 +143,12 @@ const RentalBanner = ({}) => {
                     </div>
                 </div>
             </div>
+
+            <div id="rental-info" className="learn-more">
+                        <p>Click on an item to learn more about it</p>
+                    </div>
         </div>
     )
 }
 
-export default RentalBanner;
+export default RentalBanner_Icons;
