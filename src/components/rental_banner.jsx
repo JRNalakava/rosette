@@ -91,39 +91,19 @@ const RentalBanner = ({}) => {
                     <div className="header-text">
                         <h1>What's included?</h1>
                     </div>
-                    <div className="item-col">
-                        <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.access_venue.data.access_venue}</ReactMarkdown>
-                        </div>
-                        <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.pre_event_tech_advisement.data.pre_event_tech_advisement}</ReactMarkdown>
-                        </div>
-                        <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.manager_on_duty.data.manager_on_duty}</ReactMarkdown>
-                        </div>
-                        <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.equipment_access.data.equipment_access}</ReactMarkdown>
-                        </div>
-                    </div>                    
+                    <ReactMarkdown>{data.strapiRentalBanner.access_venue.data.access_venue}</ReactMarkdown>
+                    <ReactMarkdown>{data.strapiRentalBanner.pre_event_tech_advisement.data.pre_event_tech_advisement}</ReactMarkdown>
+                    <ReactMarkdown>{data.strapiRentalBanner.manager_on_duty.data.manager_on_duty}</ReactMarkdown>
+                    <ReactMarkdown>{data.strapiRentalBanner.equipment_access.data.equipment_access}</ReactMarkdown>
                 </div>
-                <div className='equipment-card'>
                     <div className="header-text">
                         <h1>Equipment Available</h1>
                     </div> 
-                    <div className='item-col'>
-                        <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.house_venue_lobby.data.house_venue_lobby}</ReactMarkdown>
-                        </div>
-                        <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.technology.data.technology}</ReactMarkdown>
-                        </div>
-                        <div className='row-item'>
-                            <ReactMarkdown>{data.strapiRentalBanner.miscellaneous.data.miscellaneous}</ReactMarkdown>
-                        </div>
+                    <ReactMarkdown>{data.strapiRentalBanner.house_venue_lobby.data.house_venue_lobby}</ReactMarkdown>
+                    <ReactMarkdown>{data.strapiRentalBanner.technology.data.technology}</ReactMarkdown>
+                    <ReactMarkdown>{data.strapiRentalBanner.miscellaneous.data.miscellaneous}</ReactMarkdown>
                     </div>
                 </div>
-            </div>
-        </div>
     )
 }
 
