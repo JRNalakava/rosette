@@ -11,9 +11,8 @@
 .content-container{
     display: flex;
     height: auto;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    gap: 5rem;
     color: black;
     background-color: fffed17e;
 }
@@ -23,8 +22,6 @@
     height: auto;
     border-radius: 2px;
     flex-direction: column;
-    width: 50%;
-    gap: 15px;
 }
 
 
@@ -34,7 +31,6 @@
     flex-direction: column;
     height: fit-content;
     align-items: center;
-    gap: 15px;
 }
 
 .row-item{
@@ -80,14 +76,13 @@
     background-color: #070703d2;
 }
 a{
-    font-size: x-large;
     align-self: center;
     height: fit-content;
     width: fit-content;
     /* identical to box height, or 112% */
     /* Error red */
 
-    color: white;
+    color: black;
 }
 h1{    /* Error red */
     font-size: xx-large;

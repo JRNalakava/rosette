@@ -1,0 +1,56 @@
+.acg-clearfix {
+    *display: inline-block;
+    height: 1%;
+}
+.acg-clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+}
+.acg-clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.acg-footer {
+    width: 100%;
+    margin: 0 -999px;
+    padding: 30px 999px;
+    display: block;
+    overflow: hidden;
+    background: #2f353e;
+    box-shadow: rgba(0,0,0,.35) 0px 0px 5px;
+    -moz-box-shadow: rgba(0,0,0,.35) 0px 0px 5px;
+    -webkit-box-shadow: rgba(0,0,0,.35) 0px 0px 5px;
+}
+.acg-footer-copy {
+    float: left;
+}
+.acg-menu-wrapper {
+    float: left;
+}
+.acg-menu {
+    float: left;
+    margin: 0;
+}
+.acg-menu li {
+    float: left;
+    margin: 0 20px 5px 0;
+    display: inline;
+}
+.acg-menu-wrapper {
+    float: left;
+}
+.copyright {
+    float: left;
+    margin: 0;
+    position: relative;
+    font-size: 12px;
+    color: #a7b5c1;
+}

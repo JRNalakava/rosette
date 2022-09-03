@@ -5,6 +5,7 @@ import AboutUsBanner from "../components/about_us_banner"
 import "../css/index.css"
 import BannerMiddle from "../components/banner_middle"
 import RentalBanner from "../components/rental_banner"
+import Footer from "../components/footer"
 
 const IndexPage = ({data}) => {
   return (
@@ -19,6 +20,7 @@ const IndexPage = ({data}) => {
       </div>
       <BannerMiddle/>
       <RentalBanner/>
+      <Footer title="Rosette" tagline="ACG"></Footer>
     </div>
   )
 }

@@ -83,9 +83,6 @@ const RentalBanner = ({}) => {
                 </div>
                 <ReactMarkdown>{data.strapiRentalBanner.top_text.data.top_text}</ReactMarkdown>
             </div>
-            <div className="btn-row">
-                        <a className='contact-btn' href="https://www.austinclassicalguitar.org/contact-acg/">Contact Us</a>
-                </div>
             <div className='content-container'>
                 <div className='fee-card'>
                     <div className="header-text">
@@ -102,8 +99,11 @@ const RentalBanner = ({}) => {
                     <ReactMarkdown>{data.strapiRentalBanner.house_venue_lobby.data.house_venue_lobby}</ReactMarkdown>
                     <ReactMarkdown>{data.strapiRentalBanner.technology.data.technology}</ReactMarkdown>
                     <ReactMarkdown>{data.strapiRentalBanner.miscellaneous.data.miscellaneous}</ReactMarkdown>
-                    </div>
                 </div>
+            <div className="btn-row">
+                        <a className='contact-btn' href="https://www.austinclassicalguitar.org/contact-acg/">Contact Us</a>
+            </div>
+        </div>
     )
 }
 

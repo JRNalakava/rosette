@@ -6,15 +6,11 @@ h2{
 .top-container{
     display: flex;
     flex-direction: row;
+    padding-bottom: 5%;
 }
 .bottom-container{
     display: flex;
     flex-direction: row;
-}
-
-.top-right-container{
-    padding-left: 5%;
-    padding-bottom: 5%;
 }
 
 .bottom-left-container{
@@ -23,11 +19,13 @@ h2{
 
 .top-left-container{
     display: flex;
+    padding-right: 10%;
     flex-direction: column;
     min-width: 50%;
 }
 .bottom-right-container{
     display: flex;
+    padding-left: 10%;
     flex-direction: column;
     min-width: 50%;
 }
@@ -39,7 +37,7 @@ h2{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    width: 70%;
+    width: 85%;
     margin-bottom: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -55,8 +53,6 @@ h2{
         padding: 48px 75px;
     }
 }
-
-
 
 .text_card{
     display: flex;
