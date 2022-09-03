@@ -9,25 +9,28 @@
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
 }
 
 .index-container{
     width: 100%;
+    overflow: hidden;
     background-color: #FAF9F5;
 }
 
 .hero-container{
     min-height: calc(var(--desktop-hero-height)*1px);
+    overflow: hidden;
 }
 .about-us-container{
     display: flex;
+    overflow: hidden;
     justify-content: center;
     flex-direction: column;
     margin-top: none;
 }
 .rental-container{
     height: auto;
+    overflow: hidden;
 }
 
 /* 
