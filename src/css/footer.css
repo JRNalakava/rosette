@@ -19,7 +19,7 @@
     height: 0;
 }
 .acg-footer {
-    width: 100%;
+    width: 100vw;
     margin: 0 -999px;
     padding: 30px 999px;
     display: block;
